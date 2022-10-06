@@ -89,8 +89,7 @@ class _AddPageState extends State<AddPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "은행 추가하기",
+                    Text("은행 추가하기",
                       style: TextStyle(
                         color: TossColor.black,
                         fontSize: 24,
