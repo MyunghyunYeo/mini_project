@@ -25,7 +25,7 @@ class BankContainer extends StatelessWidget {
           title: Container(
             padding: EdgeInsets.only(bottom: 4.0),
             child: Text(
-              bank.name ?? "땡땡은행 계좌",
+              "${bank.name ?? "OO"}은행",
               style: TextStyle(
                 color: TossColor.bluegrey,
                 fontSize: 12,

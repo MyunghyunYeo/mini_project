@@ -75,7 +75,9 @@ class _AddPageState extends State<AddPage> {
         }
 
         return GestureDetector(
-          onTap: () {},
+          onTap: () {
+            FocusScope.of(context).unfocus(); //화면 탭할 시 폼필드 포커스 해제
+          },
           child: Scaffold(
             backgroundColor: TossColor.grey1,
             appBar: AppBar(
