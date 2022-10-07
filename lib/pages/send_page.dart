@@ -42,7 +42,9 @@ class _SendPageState extends State<SendPage> {
       // provider로 BankService를 받기 위해 최상단에 Consumer로 감싼다.
       builder: (context, service, child) {
         return GestureDetector(
-          onTap: () {},
+          onTap: () {
+            FocusScope.of(context).unfocus(); //화면 탭할 시 폼필드 포커스 해제
+          },
           child: Scaffold(
             backgroundColor: TossColor.grey1,
             appBar: AppBar(

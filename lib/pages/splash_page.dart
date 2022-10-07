@@ -12,11 +12,12 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      await Future.delayed(const Duration(seconds: 2)); // 2초 대기
+      // initState에서 대기를 걸어 줄 때 사용하는 로직.
+      await Future.delayed(const Duration(seconds: 2)); // 2초 대기.
 
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()), // HomePage로 이동
+        MaterialPageRoute(builder: (context) => HomePage()), // HomePage로 이동.
       );
     });
     super.initState();
