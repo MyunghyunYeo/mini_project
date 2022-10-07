@@ -40,6 +40,7 @@ class BankService extends ChangeNotifier {
     return true;
   }
 
+  // banks라는 이름의 Json포멧에서 DATA 가져오기
   getPrefsData() {
     String? savedString = prefs?.getString('banks');
     if (savedString != null) {
@@ -50,6 +51,7 @@ class BankService extends ChangeNotifier {
     }
   }
 
+  // DATA를 banks라는 이름의 Json포멧으로 저장하기
   saveData() async {
     await prefs?.setString(
       'banks',
