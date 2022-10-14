@@ -105,8 +105,7 @@ class _AddPageState extends State<AddPage> {
                   vertical: 8,
                   horizontal: 24,
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: ListView(
                   children: [
                     Text(
                       "은행 추가하기",
